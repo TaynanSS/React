@@ -1,15 +1,13 @@
 const App = () => {
-  let n1: number = 10;
-  let n2: number = 3;
-
-  function soma(n1: number, n2: number): number {
-    return n1 + n2;
-  }
+  let link: string = 'https://google.com';
 
   return (
-    <div>Soma: {n1 + n2}</div>
+    <div>
+      Link para o site:<br/>
+      <a href = {link}>Clique aqui para acesar</a>
+    </div>
   );
   
 }
 
-export default App;
+export default App; 
