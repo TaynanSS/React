@@ -1,0 +1,30 @@
+// Terá um número inicial e toda vez que clicar no botão, o contador soma +1
+
+import { useState } from 'react';
+
+const App = () => {
+  const [num, setNum] = useState(0);
+
+  // Criado duas functions para modificar a const num 
+
+  const buttonMinus = () => {
+    setNum( num - 1);
+  }
+
+  const buttonMore = () => {
+    setNum( num + 1);
+  }
+
+  // Criado na div dois botões de - e + e adicionado uma outra div para mostrar o resultado.
+
+  return (
+    <div>
+      <button onClick={buttonMinus}> - </button>
+      <div>{num}</div>
+      <button onClick={buttonMore}> + </button>
+    </div>
+  );
+  
+}
+
+export default App; 
