@@ -1,0 +1,18 @@
+import { useState } from 'react';
+import { Botao } from './components/Botao';
+
+const App = () => {
+  
+  const handleClick = () => {
+    
+  }
+
+  return (
+    <div> 
+      <Botao />
+    </div>
+  );
+  
+}
+
+export default App; 
